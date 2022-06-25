@@ -3,3 +3,6 @@ spring:
     name: pong
 server:
   port: 10020
+ping:
+  work-dir: ${user.home}/pingpong
+  file-name-patten: test.txt
