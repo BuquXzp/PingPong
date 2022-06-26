@@ -1,4 +1,7 @@
 spring:
+  integration:
+    taskScheduler:
+      poolSize: 10
   application:
     name: pong
 server:
