@@ -19,7 +19,7 @@ public class PingTask {
     private final PingDataDao pingDataDao;
 
     @Scheduled(cron = "${ping.cron}")
-    public void test(){
+    public void run(){
         String payload = "hello";
         Instant instant = Instant.now();
         fileService.writeNewFile(instant, payload);
