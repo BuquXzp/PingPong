@@ -26,7 +26,7 @@ public class FileService {
 
     @SneakyThrows
     public File writeNewFile(Instant instant, String payload){
-        long timeStamp = instant.getEpochSecond();
+        long timeStamp = instant.getNano();
         String folderName = dateTimeFormatter.format(instant);
         File folder = new File(pingConfiguration.getWorkDir(), folderName);
 
